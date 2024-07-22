@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operating System Survey</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title">Operating System Survey</h1>
+  <p id="description">Please take a moment to tell us about your primary operating system.</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Name</label>
+    <input id="name" type="text" required placeholder="First Last">
+
+    <label for="email" id="email-label">Email</label>
+    <input id="email" type="email" required placeholder="example@example.com">
+
+    <label for="number" id="number-label">Hours per day using your primary OS</label>
+    <input id="number" type="number" min="0" max="24" required placeholder="0-24">
+
+    <label for="dropdown">Select your primary OS</label>
+    <select id="dropdown" required>
+      <option value="">(select one)</option>
+      <option value="windows">Windows</option>
+      <option value="macos">macOS</option>
+      <option value="linux">Linux</option>
+      <option value="other">Other</option>
+    </select>
+
+    <fieldset>
+      <legend>OS Preference</legend>
+      <label for="radio-1">
+        <input id="radio-1" type="radio" name="os-preference" value="windows"> Windows
+      </label>
+      <label for="radio-2">
+        <input id="radio-2" type="radio" name="os-preference" value="macos"> macOS
+      </label>
+      <label for="radio-3">
+        <input id="radio-3" type="radio" name="os-preference" value="linux"> Linux
+      </label>
+      <label for="radio-4">
+        <input id="radio-4" type="radio" name="os-preference" value="other"> Other
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Most Important OS Features</legend>
+      <label for="checkbox-1">
+        <input type="checkbox" id="checkbox-1" name="os-features" value="security"> Security
+      </label>
+      <label for="checkbox-2">
+        <input type="checkbox" id="checkbox-2" name="os-features" value="performance"> Performance
+      </label>
+      <label for="checkbox-3">
+        <input type="checkbox" id="checkbox-3" name="os-features" value="usability"> Usability
+      </label>
+      <label for="checkbox-4">
+        <input type="checkbox" id="checkbox-4" name="os-features" value="software"> Software Compatibility
+      </label>
+    </fieldset>
+
+    <label for="textarea">Additional Comments</label>
+    <textarea id="textarea" name="textarea" required placeholder="Enter any additional notes here..."></textarea>
+
+    <input id="submit" name="submit" type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
